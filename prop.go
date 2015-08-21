@@ -2,7 +2,6 @@ package goprop
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"log"
 	"os"
