@@ -2,6 +2,11 @@
 Golang read the properties file
 
 # use
+
+install
+```
+go get github.com/tjz101/goprop
+```
 prop.properties
 ```
 port = 2770
@@ -11,7 +16,6 @@ maxOpenConns = 2000
 maxIdleConns = 1000
 ```
 main.go
- 
 ```
 package main
 
