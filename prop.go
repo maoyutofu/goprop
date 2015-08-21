@@ -35,7 +35,9 @@ func (p *Prop) Read(propFileName string) error {
 	for {
 		line, err := reader.ReadString('\n')
 		props := strings.SplitN(line, "=", 2)
-		p.m[strings.TrimSpace(props[0])] = strings.TrimSpace(props[1])
+		if len(props) >= 2 {
+			p.m[strings.TrimSpace(props[0])] = strings.TrimSpace(props[1])
+		}
 		if err != nil || io.EOF == err {
 			break
 		}
