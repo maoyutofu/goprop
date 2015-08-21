@@ -2,6 +2,15 @@
 Golang read the properties file
 
 # use
+prop.properties
+```
+prot = 2770
+driverName = mysql
+dataSourceName = root:mysql99@tcp(127.0.0.1:3306)/capture?charset=utf8
+maxOpenConns = 2000
+mMaxIdleConns = 1000
+```
+main.go
  
 ```
 package main
