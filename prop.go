@@ -24,7 +24,7 @@ func (p *Prop) Get(key string) string {
 }
 
 func (p *Prop) Read(propFileName string) error {
-	file, err := os.OpenFile("prop.properties", os.O_RDONLY, 0660)
+	file, err := os.OpenFile(propFileName, os.O_RDONLY, 0660)
 	if err != nil {
 		log.Println(err)
 		return err
